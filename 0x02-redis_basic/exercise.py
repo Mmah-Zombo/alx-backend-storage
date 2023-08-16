@@ -12,7 +12,7 @@ class Cache:
     """a cache class in redis py"""
     def __init__(self):
         self._redis = redis.Redis()
-        self.redis.flushdb()
+        self._redis.flushdb()
 
     def store(self, data):
         """stores the data"""
